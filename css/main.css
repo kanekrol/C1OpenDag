@@ -11,6 +11,29 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+.nav{
+  background: blue;
+  padding: 50px;
+  color: rgb(190, 176, 255);
+}
+nav{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
   color: #222;
   font-size: 1em;
