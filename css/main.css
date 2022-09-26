@@ -22,7 +22,7 @@ nav{
 nav p{
   font-size: 25px;
   font-weight: bolder;
-  color: #AFC1D6;
+  color: white;
   text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
@@ -40,12 +40,20 @@ nav img{
   padding: 200px;
   text-align: center;
 }
-
+.inhoud p{
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  font-size: 18px;
+}
 .inhoud h1{
   margin-top:200px;
   display:flex;
   justify-content: center;
-  color: #AFC1D6;
+  color: white;
   text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
@@ -59,7 +67,7 @@ nav img{
 .rooster h1{
   display:flex;
   justify-content: center;
-  color: #AFC1D6;
+  color: white;
   text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
@@ -74,7 +82,7 @@ nav img{
 .vakken{
   background: url(../img/schoolachtergrond.jpg)no-repeat fixed center;
   background-size: cover;
-  color: #AFC1D6;
+  color: white;
   text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
@@ -82,6 +90,7 @@ nav img{
      1px 1px 0 #000;
   text-align: center;
   padding: 10px;
+  padding-bottom: 50px;
 }
 .vakken1{
   display:flex;
@@ -112,9 +121,22 @@ nav img{
   width: 350px;
   padding: 10px;
 }
-
-
-
+.blokkenversnellen{
+  background: rgb(92, 92, 124);
+  padding-top:10px;
+  text-align: center;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.blokkenversnellen img{
+  margin:75px;
+  border:1px solid black;
+}
+#zoom:hover { transform: scale(2.0) }
 
 
 
