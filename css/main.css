@@ -13,7 +13,6 @@
 
 .nav{
   background: rgb(92, 92, 124);
-  color: #FE938C;
 }
 nav{
   display: flex;
@@ -23,7 +22,12 @@ nav{
 nav p{
   font-size: 25px;
   font-weight: bolder;
-  text-shadow: 5px 5px 5px black;
+  color: #AFC1D6;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 nav img{
   width:100px;
@@ -31,19 +35,22 @@ nav img{
   margin-top:10px
 }
 .inhoud{
-  background-image: url(../img/curiogebouw.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 10px;
-  padding-bottom: 200px;
+  background: url(../img/curiogebouw.jpg)no-repeat fixed center;
+  background-size: cover;
+  padding: 200px;
+  text-align: center;
 }
 
 .inhoud h1{
   margin-top:200px;
   display:flex;
   justify-content: center;
-  color: #FE938C;
-  text-shadow: 5px 5px 5px black;
+  color: #AFC1D6;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 .rooster{
   background: rgb(92, 92, 124);
@@ -52,8 +59,12 @@ nav img{
 .rooster h1{
   display:flex;
   justify-content: center;
-  color: #FE938C;
-  text-shadow: 5px 5px 5px black;
+  color: #AFC1D6;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 .rooster img{
   width:1000px;
@@ -61,8 +72,45 @@ nav img{
   padding-bottom: 100px;
 }
 .vakken{
-  background: #FE938C;
-  padding-top:10px
+  background: url(../img/schoolachtergrond.jpg)no-repeat fixed center;
+  background-size: cover;
+  color: #AFC1D6;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  text-align: center;
+  padding: 10px;
+}
+.vakken1{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.programmeervak{
+  background: url(../img/codeachtergrond.jpg)no-repeat fixed center;
+  border-radius: 50px;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+  padding: 10px;
+}
+.overigvak{
+  background: url(../img/overigvak.jpg)no-repeat fixed center;
+  border-radius: 50px;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+  padding: 10px;
+}
+.generiekvak{
+  background: url(../img/generiekvak.jpg)no-repeat fixed center;
+  border-radius: 50px;
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+  padding: 10px;
 }
 
 
