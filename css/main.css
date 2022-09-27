@@ -11,391 +11,453 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-.nav{
-  background: rgb(92, 92, 124);
-}
-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-nav p{
-  font-size: 25px;
-  font-weight: bolder;
-  color: white;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-nav img{
-  width:100px;
-  height:50px;
-  margin-top:10px
-}
-.inhoud{
-  background: url(../img/curiogebouw.jpg)no-repeat fixed center;
-  background-size: cover;
-  padding: 200px;
-  text-align: center;
-}
-.inhoud p{
-  color: white;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-  font-size: 18px;
-}
-.inhoud h1{
-  margin-top:200px;
-  display:flex;
-  justify-content: center;
-  color: white;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-.rooster{
-  background: rgb(92, 92, 124);
-  padding-top:10px
-}
-.rooster h1{
-  display:flex;
-  justify-content: center;
-  color: white;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-.rooster img{
-  width:1000px;
-  margin-left: 250px;
-  padding-bottom: 100px;
-}
-.vakken{
-  background: url(../img/schoolachtergrond.jpg)no-repeat fixed center;
-  background-size: cover;
-  color: white;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-  text-align: center;
-  padding: 10px;
-  padding-bottom: 50px;
-}
-.vakken1{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.programmeervak{
-  background: url(../img/codeachtergrond.jpg)no-repeat fixed center;
-  border-radius: 50px;
-  background-size: cover;
-  height: 300px;
-  width: 350px;
-  padding: 10px;
-}
-.overigvak{
-  background: url(../img/overigvak.jpg)no-repeat fixed center;
-  border-radius: 50px;
-  background-size: cover;
-  height: 300px;
-  width: 350px;
-  padding: 10px;
-}
-.generiekvak{
-  background: url(../img/generiekvak.jpg)no-repeat fixed center;
-  border-radius: 50px;
-  background-size: cover;
-  height: 300px;
-  width: 350px;
-  padding: 10px;
-}
-.blokkenversnellen{
-  background: rgb(92, 92, 124);
-  padding-top:10px;
-  padding-bottom:10px;
-  text-align: center;
-  color: white;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-.blokkenversnellen img{
-  margin:75px;
-  border:1px solid black;
-}
-#zoom:hover { transform: scale(2.0) }
-
-
-
-
-
-
-
-
-
-
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+   .nav{
+    background: rgb(92, 92, 124);
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  nav p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  nav img{
+    width:100px;
+    height:50px;
+    margin-top:10px
   }
-
+  .inhoud{
+    background: url(../img/curiogebouw.jpg)no-repeat fixed center;
+    background-size: cover;
+    padding: 200px;
+    text-align: center;
+    border-top: 3px solid #A997DF;
+  }
+  .inhoud p{
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    font-size: 18px;
+  }
+  .inhoud h1{
+    margin-top:200px;
+    display:flex;
+    justify-content: center;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  .rooster{
+    background: rgb(92, 92, 124);
+    padding-top:10px;
+    border-top: 3px solid #A997DF;
+  }
+  .rooster h1{
+    display:flex;
+    justify-content: center;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  .rooster img{
+    width:1000px;
+    margin-left: 250px;
+    padding-bottom: 100px;
+  }
+  .vakken{
+    border-top: 3px solid #A997DF;
+    background: url(../img/schoolachtergrond.jpg)no-repeat fixed center;
+    background-size: cover;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+  .vakken1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .programmeervak{
+    background: url(../img/codeachtergrond.jpg)no-repeat fixed center;
+    border-radius: 50px;
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    padding: 10px;
+  }
+  .overigvak{
+    background: url(../img/overigvak.jpg)no-repeat fixed center;
+    border-radius: 50px;
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    padding: 10px;
+  }
+  .generiekvak{
+    background: url(../img/generiekvak.jpg)no-repeat fixed center;
+    border-radius: 50px;
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    padding: 10px;
+  }
+  .blokkenversnellen{
+    border-top: 3px solid #A997DF;
+    background: rgb(92, 92, 124);
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  .blokkenversnellen img{
+    margin:75px;
+    border:1px solid black;
+  }
+  #zoom:hover { transform: scale(2.0) }
+  
+  .alledocenten{
+    border-top: 3px solid #A997DF;
+    text-align: center;
+    background: url(../img/docent.jpg)no-repeat fixed center;
+    background-size: cover;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    text-align: center;
+    padding: 100px;
+  }
+  .docenten{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .docent{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .docent img{
+    width:150px;
+    border-radius: 100px;
+    border: 5px solid rgb(92, 92, 124);
+  }
+  
+  body p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  body h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  footer{
+    border-top: 3px solid #A997DF;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(92, 92, 124);
+    padding: 10px;
+  }
+  footer img{
+    width:200px;
+  }
+  footer p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-
-  pre {
-    white-space: pre-wrap !important;
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
+  
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   * A better looking default horizontal rule
    */
-  thead {
-    display: table-header-group;
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
   }
-}
-
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
